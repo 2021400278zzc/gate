@@ -304,9 +304,9 @@ EDGE_HOSTS = [
     if h.strip()
 ]
 
-NODES_URL = os.environ.get("NODES_URL", "https://YOUR_GITHUB_USERNAME.github.io/gate/nodes.txt")
+NODES_URL = os.environ.get("NODES_URL", "https://2021400278zzc.github.io/gate/nodes.txt")
 
-def build_nodes_text(data):
+def zzcbuild_nodes_text(data):
     """生成纯节点行版本 (无注释): 每行 = 入口地址#名字$sstp://..."""
     countries = data["countries"]
     _entry = os.environ.get("HOSTS_ENTRY", "").strip()
